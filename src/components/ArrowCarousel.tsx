@@ -109,7 +109,7 @@ export default function ArrowCarousel({ images, className = '' }: ArrowCarouselP
             <img
               src={src}
               alt={`Luminária 3D ${idx + 1}`}
-              loading={idx < 2 ? 'eager' : 'lazy'}
+              loading="lazy"
               decoding="async"
               width={240}
               height={310}

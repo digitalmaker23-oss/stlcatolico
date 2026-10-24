@@ -98,7 +98,7 @@ export default function TestimonialsSection({ onCtaClick }: TestimonialsSectionP
                 <img
                   src={src}
                   alt={`Depoimento ${index + 1}`}
-                  loading={index === 0 ? 'eager' : 'lazy'}
+                  loading="lazy"
                   decoding="async"
                   width={512}
                   height={800}

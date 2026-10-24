@@ -1,9 +1,9 @@
 import { BenefitItem, GuideItem, FaqItem, LampItem } from './types';
 
 export const CHECKOUT_URLS = {
-  completo: 'https://checkout.wiven.com.br/checkout/cmssaso1r0bw001odhutl03ut?offer=G4ZPAP2', // R$ 37,90
-  upgrade21: 'https://checkout.wiven.com.br/checkout/cmssbinuv0cf301odisgk4oou?offer=H8IYYC6', // R$ 21,90
-  basico: 'https://checkout.wiven.com.br/checkout/cmssbo7jv0ch601odk1cphgbi?offer=0HNUW3I', // R$ 10,90
+  completo: 'https://ggcheckout.app/checkout/v5/KowEnjw5XvOVyYG06Pzzfn', // R$ 37,90
+  upgrade21: 'https://ggcheckout.app/checkout/v5/r4fbaDyuMc0gEKh93RIjq3', // R$ 21,90
+  basico: 'https://ggcheckout.app/checkout/v5/Cxa8IPPTzpVhbnuHhJuqt1', // R$ 10,90
 };
 
 export const MODEL_IMAGES = [

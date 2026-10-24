@@ -161,17 +161,16 @@ export default function HeroSection({ onCtaClick }: HeroSectionProps) {
             </button>
           )}
 
-          {/* Player de Vídeo Nativo */}
+          {/* Player de Vídeo Nativo com buffer antecipado */}
           <video
             ref={videoRef}
             controls={isPlaying}
             playsInline
-            preload="metadata"
+            preload="auto"
             poster="/images/video-poster-horizontal.webp"
             className="w-full h-full object-contain bg-black"
             onPlay={() => setIsPlaying(true)}
           >
-            <source src="/videos/video-horizontal.mp4" type="video/mp4" />
             <source src="https://i.imgur.com/fXhXaEd.mp4" type="video/mp4" />
             Seu navegador não suporta a reprodução deste vídeo.
           </video>

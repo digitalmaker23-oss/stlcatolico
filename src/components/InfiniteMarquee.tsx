@@ -64,29 +64,23 @@ export default function InfiniteMarquee({
           willChange: isInView ? 'transform' : 'auto',
         }}
       >
-        {marqueeList.map((src, idx) => {
-          // Apenas os 3 primeiros cartões de cada linha carregam imediatamente
-          // Todos os outros usam lazy loading para carregamento ultra rápido
-          const isPriority = idx < 3;
-
-          return (
-            <div
-              key={`${src}-${idx}`}
-              className="flex-shrink-0 w-[140px] sm:w-[210px] md:w-[240px] h-[185px] sm:h-[270px] md:h-[310px] rounded-[16px] sm:rounded-[20px] overflow-hidden border border-[#c9a84c]/25 bg-[#1a1a1a] shadow-md shadow-black/60"
-            >
-              <img
-                src={src}
-                alt={`Modelo STL Católico ${idx + 1}`}
-                loading={isPriority ? 'eager' : 'lazy'}
-                decoding="async"
+        {marqueeList.map((src, idx) => (
+          <div
+            key={`${src}-${idx}`}
+            className="flex-shrink-0 w-[140px] sm:w-[210px] md:w-[240px] h-[185px] sm:h-[270px] md:h-[310px] rounded-[16px] sm:rounded-[20px] overflow-hidden border border-[#c9a84c]/25 bg-[#1a1a1a] shadow-md shadow-black/60"
+          >
+            <img
+              src={src}
+              alt={`Modelo STL Católico ${idx + 1}`}
+              loading="lazy"
+              decoding="async"
                 width={240}
                 height={310}
                 className="w-full h-full object-cover block pointer-events-none select-none transition-opacity duration-300"
                 draggable={false}
-              />
-            </div>
-          );
-        })}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
