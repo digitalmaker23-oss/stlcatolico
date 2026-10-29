@@ -1,9 +1,9 @@
 import { BenefitItem, GuideItem, FaqItem, LampItem } from './types';
 
 export const CHECKOUT_URLS = {
-  completo: 'https://ggcheckout.app/checkout/v5/KowEnjw5XvOVyYG06Pzzfn', // R$ 37,90
-  upgrade21: 'https://ggcheckout.app/checkout/v5/r4fbaDyuMc0gEKh93RIjq3', // R$ 21,90
-  basico: 'https://ggcheckout.app/checkout/v5/Cxa8IPPTzpVhbnuHhJuqt1', // R$ 10,90
+  completo: 'https://appdigitalhub.com.br/c/DBFFEE4B', // R$ 37,90
+  upgrade21: 'https://appdigitalhub.com.br/c/7CA29F90', // R$ 21,90
+  basico: 'https://appdigitalhub.com.br/c/ADD2D663', // R$ 10,90
 };
 
 export const MODEL_IMAGES = [
